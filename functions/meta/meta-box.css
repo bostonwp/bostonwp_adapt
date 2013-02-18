@@ -1,0 +1,31 @@
+/* common rules for all fields */
+.-label-td {width: 30% !important}
+.-label { font-weight: bold; }
+
+
+/*single image*/
+.-single-image{width: 60% !important;}
+
+/* select text */
+.-text {width: 100% !important}
+
+/* select field */
+.-select {height: auto !important}
+
+/* uploaded image */
+.-images li {margin: 0 10px 10px 0; float: left; width: 150px; height: 100px; text-align: center; border: 3px solid #ccc; cursor: move; position: relative}
+.-images img {width: 150px; height: 100px}
+.-images a {position: absolute; bottom: 0; right: 0; color: #fff; background: #000; font-weight: bold; padding: 5px}
+
+/* upload button */
+.-upload-button {float: left; clear: both; margin-top: 10px}
+
+.-slider { max-width: 200px; margin-bottom: 8px;}
+
+/* time picker */
+.ui-timepicker-div {font-size: 0.9em}
+.ui-timepicker-div .ui-widget-header {margin-bottom: 8px}
+.ui-timepicker-div dl {text-align: left}
+.ui-timepicker-div dl dt {height: 25px}
+.ui-timepicker-div dl dd {margin: -25px 0 10px 65px}
+.ui-timepicker-div td {font-size: 90%}

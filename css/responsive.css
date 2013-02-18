@@ -1,0 +1,155 @@
+/* This File Contains All Responsive CSS - Sweet! */
+
+/* Custom Drop-Down
+================================================== */
+#masternav .selector option{ background:#eee; -webkit-appearance:none; padding: 5px; }
+#masternav .selector, 
+#masternav .selector span{ cursor: pointer !important; -webkit-font-smoothing:antialiased; }
+#masternav .selector, 
+#masternav .selector *{ margin:0; padding:0; }
+#masternav .selector select{ top:0px; left:0px; }
+#masternav .selector{ width: 100%; font-size:12px;  font-weight:bold; }
+#masternav .selector span:after { padding-left: 5px; padding-right: 5px; content: "\f078"; font-family: 'FontAwesome'; }
+#masternav .selector span{ cursor:pointer; }
+#masternav .selector{ height: 30px; line-height: 30px; display:-moz-inline-box;  display:inline-block;  vertical-align:middle;  zoom:1;  *display:inline; }
+#masternav .selector select:focus{outline:0; }
+#masternav .selector{ position:relative;  padding-left:10px;  overflow:hidden; }
+#masternav .selector span{ display:block;  overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap; }
+#masternav .selector select{ position:absolute;  height:35px;  background:none;  width:97%; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;  font-size:12px;  font-weight:500;  border:0 !important; }
+
+
+/* General
+================================================== */
+img{ max-width: 100%; }
+
+/*hide redundant menu*/
+#masternav select { display: none; width: 100% !important; }
+#masternav .selector { display: none; margin-top: 5px; }
+
+
+/* Apply To All Responsive Layouts
+================================================== */
+@media only screen and (device-width: 768px) {
+
+	
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 740px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	#wrap{ width: 680px; }
+	.hp-highlight, .portfolio-item, .home-entry, #footer-one,#footer-two,#footer-three,#footer-four{ width: 155px;  }
+	#home-tagline{ font-size: 21px; }
+	#search { text-indent: -9999px; }
+	.loop-entry-thumbnail{width: 35%;}
+        #content{
+            width: 480px;
+        }
+
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 290px */
+@media only screen and (max-width: 767px) {
+	
+	/*hide*/
+	.flexslider .caption{ display: none; }
+	
+	/*display dropdown nav*/
+	#masternav .selector,
+	#masternav select { display: inline-block; }
+	#masternav ul { display: none; }
+	#masternav{ padding: 0; height: 40px; line-height: 40px; float: none; padding: 0 5px; margin: 0; background: #3fb7b7; color: #fff; top: 0; right: 0; cursor: pointer; }
+	
+	#wrap{ width: 230px; }
+	.hp-highlight, .portfolio-item, .home-entry, #footer-one,#footer-two,#footer-three,#footer-four{ width: 230px; margin-right: auto; margin-left: auto; }
+	#portfolio-wrap{ margin-right:  0; }
+	
+	#home-tagline{ font-size: 16px; }
+	
+	.flex-direction-nav li a.next,
+	.flex-direction-nav li a.prev {height: 40px;width: 25px; line-height: 40px;margin-top: -20px;}
+	
+	ul.filter{ position: inherit; margin-top: 10px; margin-bottom: 0px; top: 0; left: 0; }
+	ul.filter li{ margin-top: 10px; }
+	
+	#single-nav a{ font-size: 10px; }
+	#single-nav-left, #single-nav-right { margin-left: 5px; }
+	
+	.post, #sidebar{ width: 100%; }
+	
+	.loop-entry-meta{ display: none; }
+	.loop-entry h2{ margin-bottom: 10px; }
+	
+	#sidebar{ margin-top: 25px; padding-top: 25px; border-top: 5px solid #444; }
+	
+	#single-portfolio-left, #single-portfolio-right{float: none;width: 100%; }
+	
+	#page-heading{ text-align: center; }
+	#single-nav{ position: inherit; margin-top: 20px; margin-left: -10px; text-align: center; }
+	#single-nav-left, #single-nav-right { display: inline-block; float: none; }
+	
+	.children li{ margin: 0 !important; }
+	
+	#copyright,#back-to-top{ float: none; width: 100%; text-align: center; }
+	
+	.one-half, .one-third, .two-third, .one-fourth, .three-fourth, .one-fifth, .one-sixth {width: 100%; float: none;} 
+        #content{
+            width: 480px;
+        }
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 420px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	#wrap{ width: 420px; }
+	.hp-highlight, .portfolio-item, .home-entry, #footer-one, #footer-three{ width: 200px; margin-right: 20px; }
+	#footer-two, #footer-four { width: 200px; margin-right: 0; }
+	
+	.responsive-clear{ clear: both; }
+	
+	.loop-entry-thumbnail{width: 33%;}
+	
+	ul.filter{ margin-bottom: 0; }
+        #content{
+            width: 420px;
+        }
+}
+/* #Mobile (Landscape)
+================================================== */       
+@media only screen and (max-width: 479px) {
+        #content{
+            width: 230px;
+        }
+        .bbp-forum-front table tr td, 
+        .bbp-forum-front table tr th, 
+        .bbp-forum-content table tr td, 
+        .bbp-forum-content table tr th, 
+        .bbp-topic-wrapper table tr td, 
+        .bbp-topic-wrapper table tr th {
+            display: block;
+        }
+        #content .bbp-forum-topic-count,
+        #content .bbp-forum-reply-count,
+        #content .bbp-forum-freshness,
+        #content .bbp-topic-voice-count,
+        #content .bbp-topic-reply-count,
+        #content .bbp-topic-freshness,
+        #content table .avatar,
+        #content th.bbp-reply-author,
+        #content td.bbp-reply-author br{
+            display:none;
+        }
+        .post .wp-meetup-event{
+            width:190px;
+        }
+}
